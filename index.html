@@ -1,158 +1,255 @@
-<div align="center">
+<!DOCTYPE html>
+<html lang="en">
 
-# 👋 Hi, I'm Mykyta Serdiuk
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-### Backend Engineer | Go Developer | Software Builder
+    <title>Mykyta Serdiuk | Backend Engineer</title>
 
-I build backend systems, developer tools and experimental software.
-My main focus is **Go**, distributed systems, databases and infrastructure.
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-</div>
+        body {
+            margin: 0;
+            font-family: Inter, "Segoe UI", Arial, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
 
----
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 25px;
+        }
 
-## 🚀 About Me
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
 
-I am a software developer focused on backend engineering and system design.
+        .hero h1 {
+            font-size: 48px;
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
 
-My main language is **Go**, where I build:
+        .hero h2 {
+            font-weight: 400;
+            color: #8b949e;
+        }
 
-- REST APIs and backend services
-- interpreters and programming language tools
-- database-driven applications
-- distributed systems
-- developer utilities
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding-top: 5px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            margin: 25px 0;
+        }
 
-I enjoy understanding how things work internally — from parsers and compilers
-to networking protocols and infrastructure.
+        h2 {
+            color: #58a6ff;
+        }
 
----
+        h3 {
+            color: #f0f6fc;
+        }
 
-## 🛠️ Technologies I Work With
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-### Backend
+        .skill {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 8px 14px;
+            border-radius: 20px;
+            color: #79c0ff;
+        }
 
-<div>
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
 
-Go • PostgreSQL • MySQL • SQLite  
-REST API • SQL Optimization • Microservices  
-Message Queues • Distributed Systems
+        .project {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            margin-top: 20px;
+        }
 
-</div>
+        .project:hover {
+            border-color: #58a6ff;
+            transform: translateY(-3px);
+            transition: .2s;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #8b949e;
+        }
+
+        .code {
+            font-family: monospace;
+            color: #7ee787;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>Mykyta Serdiuk</h1>
+            <h2>
+                Backend Engineer · Go Developer · Software Builder
+            </h2>
+
+            <p>
+                Building backend systems, developer tools and experimental software.
+            </p>
+        </section>
+
+        <div class="card">
+            <h2>👋 About Me</h2>
+            <p>
+                I am a software developer focused on backend engineering,
+                system design and low-level programming.
+            </p>
+            <p>
+                My main language is <b>Go</b>. I enjoy building things from scratch:
+                from HTTP services and databases to interpreters and programming languages.
+            </p>
+        </div>
 
 
-### Frontend
 
-React • Next.js • TypeScript  
-Tailwind CSS • Modern Web Applications
+        <div class="card">
+            <h2>🛠 Technology Stack</h2>
+            <div class="skills">
+                <span class="skill">Go</span>
+                <span class="skill">PostgreSQL</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Linux</span>
+                <span class="skill">REST API</span>
+                <span class="skill">Microservices</span>
+                <span class="skill">Kafka</span>
+                <span class="skill">MinIO</span>
+                <span class="skill">Next.js</span>
+                <span class="skill">React</span>
+                <span class="skill">Tailwind CSS</span>
+            </div>
+        </div>
 
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3><a href="https://github.com/mykytaserdiuk/ser">SER Programming Language</a></h3>
+                <p>
+                    A programming language with interpreter written in Go.
+                </p>
 
-### Infrastructure
+                <ul>
+                    <li>Lexer</li>
+                    <li>Parser</li>
+                    <li>AST</li>
+                    <li>Functions</li>
+                    <li>Variables</li>
+                    <li>Interpreter runtime</li>
+                </ul>
+                <p><a href="https://mykytaserdiuk.github.io/serc/">Ser website</a></p>
+            </div>
 
-Docker • Linux • Nginx  
-Traefik • Cloudflare  
-CI/CD • Self-hosted Services
+            <div class="project">
+                <h3><a href="https://github.com/mykytaserdiuk/wind">wind</a></h3>
+                <p>
+                    UI Framework on Raylib written in Go. It provides a simple way to create graphical user interfaces
+                    for desktop applications.
+                </p>
 
+                <ul>
+                    <li>UI elements based on Rectangle</li>
+                    <li>Layer system</li>
 
-### Developer Tools
+                    <li>UI interactions</li>
 
-Language Design  
-Lexers & Parsers  
-AST Design  
-Interpreters  
-Compiler Concepts
+                    <li>Correct mouse input processing</li>
+                    <li>Dynamic element creation and removal</li>
+                    <li>Architecture focused on maintainability and extensibility</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/mykytaserdiuk/fluxo">Fluxo</a></h3>
+                <p>
+                    lightweight implementation of <a href="https://dzone.com/articles/design-patterns-event-bus">the
+                        Event
+                        Bus pattern</a>
+                </p>
 
----
+                <ul>
+                    <li>Publish-Subscribe Model</li>
+                    <li>Type-Safe Events: Strongly-typed event handling</li>
+                    <li>Async Event Processing: Non-blocking event delivery</li>
+                    <li>Multiple Subscribers: Support for multiple handlers per event type</li>
+                    <li>Simple API</li>
+                </ul>
+            </div>
+        </div>
 
-## 🔥 Featured Projects
+        <div class="card">
+            <h2>Engineering Approach</h2>
+            <p>
+                I like understanding how software works internally.
+            </p>
+            <p>
+                I study:
+            </p>
+            <ul>
+                <li>Programming language design</li>
+                <li>Compilers and interpreters</li>
+                <li>Database internals</li>
+                <li>Networking</li>
+                <li>System architecture</li>
+            </ul>
+        </div>
 
-### 🧠 Custom Programming Language
+        <div class="card">
+            <h2>📚 Currently Learning</h2>
+            <p class="code">
+                Distributed systems · Kubernetes · Kafka · Cloud infrastructure · Advanced Go
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <a href="https://github.com/mykytaserdiuk">
+            GitHub
+        </a>
+        <br>
+        © Mykyta Serdiuk
+    </footer>
+    </div>
+</body>
 
-A personal programming language written in Go.
-
-Features:
-
-- Lexer
-- Token system
-- Parser
-- AST representation
-- Functions
-- Variables
-- Expressions
-- Interpreter runtime
-
-The goal is to understand programming languages from the inside.
-
----
-
-### 🛒 Myfutbolka E-commerce Platform
-
-Full-stack ecommerce system.
-
-Stack:
-
-- Go backend
-- Next.js frontend
-- MySQL database
-- Docker deployment
-
-Implemented:
-
-- product management
-- attributes system
-- dynamic pricing
-- image storage
-- API architecture
-
----
-
-### ⚙️ Backend Experiments
-
-Various projects exploring:
-
-- microservice architecture
-- networking
-- MQTT communication
-- UDP discovery
-- storage systems
-- infrastructure automation
-
----
-
-## 🧩 Engineering Philosophy
-
-I believe the best way to learn software engineering is by building real systems.
-
-Instead of only using abstractions, I like to understand:
-
-- how parsers work
-- how databases execute queries
-- how networks communicate
-- how operating systems manage resources
-- how large systems are designed
-
----
-
-## 📚 Currently Learning
-
-- Advanced Go architecture
-- Distributed systems
-- Kubernetes
-- Kafka
-- Cloud infrastructure
-- Compiler development
-
----
-
-## 🎯 Goals
-
-Building reliable software, improving system design skills,
-and contributing to open-source projects.
-
----
-
-<div align="center">
-
-### Let's build something useful 🚀
-
-</div>
+</html>
